@@ -2,18 +2,18 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        int x = 200; // Начальная сумма на счете
-        int y = 600; // Сумма пополнения
-        int i;
+        int initialAmount = 200; // Начальная сумма на счете
+        int amountDeposited = 600; // Сумма пополнения
+        int bonus;
         // Вычисление бонуса
-        if (y > 100) {
-            i = y / 100;
+        if (amountDeposited > 100) {
+            bonus = amountDeposited / 100;
         } else {
-            i = 0;
+            bonus = 0;
         }
         // Вычисление итоговой суммы баланса
-        int b = x + y + i;
-        System.out.println((i) + " Ваш бонус ");
-        System.out.println((b) + " Итоговый баланс");
+        int totalAmount = initialAmount + amountDeposited + bonus;
+        System.out.println((bonus) + " Ваш бонус ");
+        System.out.println((totalAmount) + " Итоговый баланс");
     }
 }
